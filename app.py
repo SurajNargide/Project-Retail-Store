@@ -16,7 +16,7 @@ def index():
     from flask import jsonify
     if request.method == 'POST':
         return jsonify(**request.json)
-    data = pd.read_csv(r"Retail-Ecommerce.csv", encoding = 'unicode_escape')
+    data = pd.read_excel(r"Retail-Ecommerce.xlsx", encoding = 'unicode_escape')
     clv = pd.read_csv(r"clv.csv")
     sale = pd.read_csv(r"salepermonth.csv")
     x = int(request.form['id'])

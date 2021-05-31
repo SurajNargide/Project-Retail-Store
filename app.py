@@ -13,9 +13,6 @@ def home():
 
 @app.route('/index', methods=['POST','GET'])
 def index():
-    from flask import jsonify
-    if request.method == 'POST':
-        return jsonify(**request.json)
     data = pd.read_excel(r"Retail-Ecommerce.xlsx", encoding = 'unicode_escape')
     clv = pd.read_csv(r"clv.csv")
     sale = pd.read_csv(r"salepermonth.csv")

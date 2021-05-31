@@ -13,7 +13,7 @@ def home():
 
 @app.route('/index', methods=['POST','GET'])
 def index():
-    data = pd.read_csv(r"https://github.com/SurajNargide/Project-Retail-Store/blob/main/Retail-Ecommerce.csv", encoding='unicode_escape')
+    #data = pd.read_csv(r"https://github.com/SurajNargide/Project-Retail-Store/blob/main/Retail-Ecommerce.csv", encoding='unicode_escape')
     clv = pd.read_csv(r"https://github.com/SurajNargide/Project-Retail-Store/blob/main/clv.csv")
     sale = pd.read_csv(r"https://github.com/SurajNargide/Project-Retail-Store/blob/main/salepermonth.csv")
     x = int(request.form['id'])
@@ -47,10 +47,10 @@ def index():
     qurt = qurt.drop('CustomerID', axis=1)
     qurt_col = qurt.columns
     qurt_val = qurt.values
-    purchase = (data.loc[data['CustomerID'] == x])
-    purchase = pd.DataFrame(purchase)
-    purchase_col = purchase.columns
-    purchase_value = purchase.values
+    #purchase = (data.loc[data['CustomerID'] == x])
+    #purchase = pd.DataFrame(purchase)
+    #purchase_col = purchase.columns
+    #purchase_value = purchase.values
 
     # Graph
     g = (sale.loc[sale['CustomerID'] == x])

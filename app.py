@@ -13,7 +13,7 @@ def home():
 
 @app.route('/index', methods=['POST','GET'])
 def index():
-    data = pd.read_csv(r"static/Retail-Ecommerce.csv", encoding='unicode_escape')
+    data = pd.read_csv(r"https://github.com/SurajNargide/Project-Retail-Store/blob/main/Retail-Ecommerce.csv.csv", encoding='unicode_escape')
     clv = pd.read_csv(r"static/clv.csv")
     sale = pd.read_csv(r"static/salepermonth.csv")
     x = int(request.form['id'])

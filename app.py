@@ -68,7 +68,7 @@ def index():
     else:
         y = 1
 
-    return render_template("index.html", x = r, purchase=purchase, id = x, headings = purchase_col, data = purchase_value,
+    return render_template("index.html", x = r,  id = x, 
                            headings_r =r_col , data_r =r_val, score_head = score_col, score_data = score_val, total_head = total_col, total_data = total_val,
                            qurt_head = qurt_col, qurt_data = qurt_val, y = y )
 

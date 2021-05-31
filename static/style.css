@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.table{
+    align: left;
+    border-spacing: 0;
+    background-color: #f5f5f5;
+    width: 50%;
+}
+
+.table__row:nth-child(even) {
+    background-color: #e5e5e5;
+}
+
+.table__header {
+    text-align: left;
+}
+
+.table__cell {
+    padding: 1px;
+}
+
+html {
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  height: 140vh;
+  background-size: cover;
+  background-image: url(images/1622186751817.jpg);
+}
+
+main header {
+  width: 100vw;
+  height: 14vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+main header span {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+main header .brand img {
+  width: 200px;
+  height: 80px;
+}
+
+main .filter {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+main .filter .customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 30vw;
+  height: 30vh;
+  background-color: rgba(255, 255, 255, 0.924);
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .filter .customer span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+main .filter .customer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main .filter .customer form input {
+  padding: 4px 10px;
+}
+
+main .filter .customer .btn {
+  width: 100px;
+  height: 40px;
+  font-weight: 500;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+  margin-top: 10px;
+}
+
+main .filter .part1 {
+  width: 32vw;
+  height: 44vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .filter .part1 .box1 {
+  width: 200px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.904);
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  padding: 10px;
+}
+
+main .filter .part1 .box1 span {
+  border-bottom: 1px solid #000;
+}
+
+main .filter .part1 .box1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .filter .part1 .box2 {
+  width: 250px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.911);
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+main .filter .part1 .box2 span {
+  border-bottom: 1px solid #000;
+}
+
+main .filter .part1 .box3 {
+  width: 200px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.911);
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-right: 20px;
+}
+
+main .filter .part1 .box3 span {
+  border-bottom: 1px solid #000;
+}
+
+main .filter .part1 .box4 {
+  width: 250px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.925);
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+main .filter .part1 .box4 span {
+  border-bottom: 1px solid #000;
+}
+
+main .filter .image {
+  width: 20vw;
+  height: 30vh;
+  background-color: rgba(255, 255, 255, 0.911);
+  padding: 10px;
+}
+
+main .filter .image img {
+  width: 80%;
+  height: 80%;
+}
+
+main .data {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .data .data1, main .data .data2 {
+  width: 46vw;
+  height: 60vh;
+  background-color: rgba(255, 255, 255, 0.904);
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+main .data .data1 h4, main .data .data2 h4 {
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */

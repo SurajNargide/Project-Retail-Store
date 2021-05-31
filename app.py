@@ -13,7 +13,7 @@ def home():
 
 @app.route('/index', methods=['POST','GET'])
 def index():
-    #data = pd.read_csv(r"https://github.com/SurajNargide/Project-Retail-Store/blob/main/Retail-Ecommerce.csv", encoding='unicode_escape')
+    data = pd.read_csv(r"static/Retail-Ecommerce.csv", encoding='unicode_escape')
     clv = pd.read_csv(r"static/clv.csv")
     sale = pd.read_csv(r"static/salepermonth.csv")
     x = int(request.form['id'])
@@ -47,10 +47,10 @@ def index():
     qurt = qurt.drop('CustomerID', axis=1)
     qurt_col = qurt.columns
     qurt_val = qurt.values
-    #purchase = (data.loc[data['CustomerID'] == x])
-    #purchase = pd.DataFrame(purchase)
-    #purchase_col = purchase.columns
-    #purchase_value = purchase.values
+    purchase = (data.loc[data['CustomerID'] == x])
+    purchase = pd.DataFrame(purchase)
+    purchase_col = purchase.columns
+    purchase_value = purchase.values
 
     # Graph
     g = (sale.loc[sale['CustomerID'] == x])
@@ -68,7 +68,7 @@ def index():
     else:
         y = 1
 
-    return render_template("index.html", x = r,  id = x, 
+    return render_template("index.html", x = r,  id = x, purchase = purchase, headings = purchase_col, data = purchase_value,
                            headings_r =r_col , data_r =r_val, score_head = score_col, score_data = score_val, total_head = total_col, total_data = total_val,
                            qurt_head = qurt_col, qurt_data = qurt_val, y = y )
 
